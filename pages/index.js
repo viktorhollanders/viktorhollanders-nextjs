@@ -1,90 +1,113 @@
-import React from "react";
-import Head from "next/head";
-import Nav from "../components/nav";
+import Nav from "../components/Nav";
+export default function Home() {
+  const myTitle = "Viktor Hollanders";
 
-const Home = () => (
-	<div>
-		<Head>
-			<title>Home</title>
-			<link rel='icon' href='/favicon.ico' />
-		</Head>
+  const houers = new Date().getHours();
+  const minutes = new Date().getUTCMinutes();
+  const time = `${houers}:${minutes}`;
 
-		<Nav />
+  return (
+    <div className="root">
+      <head>
+        <title>{myTitle}</title>
+        <meta
+          key="description"
+          name="description"
+          content="This is the personal website for Viktor hollanders showcasing his projects and photos."
+        />
+      </head>
+      <Nav />
+      <h1 className="title">{myTitle}</h1>
 
-		<div className='hero'>
-			<h1 className='title'>Welcome to Next.js!</h1>
-			<p className='description'>
-				To get started, edit <code>pages/index.js</code> and save to reload.
-			</p>
+      <p className="about">
+        My name is Viktor Hollanders and I am a develoer based in Reykjavik Iceland.
+        Below are I have listed the porgramming languages and thecnologys I work with.
+      </p>
 
-			<div className='row'>
-				<a href='https://nextjs.org/docs' className='card'>
-					<h3>Documentation &rarr;</h3>
-					<p>Learn more about Next.js in the documentation.</p>
-				</a>
-				<a href='https://nextjs.org/learn' className='card'>
-					<h3>Next.js Learn &rarr;</h3>
-					<p>Learn about Next.js by following an interactive tutorial!</p>
-				</a>
-				<a
-					href='https://github.com/zeit/next.js/tree/master/examples'
-					className='card'
-				>
-					<h3>Examples &rarr;</h3>
-					<p>Find other example boilerplates on the Next.js GitHub.</p>
-				</a>
-			</div>
+      <ul>
+        <li>HTML</li>
+        <li>Css</li>
+        <li>Javascript</li>
+        <li>Next js</li>
+        <li>React</li>
+        <li>Git</li>
+        <li>Command line</li>
+        <li>Craft CMS</li>
+      </ul>
 
-			<div>hey this is my new site</div>
-		</div>
 
-		<style jsx>{`
-			.hero {
-				width: 100%;
-				color: #333;
-			}
-			.title {
-				margin: 0;
-				width: 100%;
-				padding-top: 80px;
-				line-height: 1.15;
-				font-size: 48px;
-			}
-			.title,
-			.description {
-				text-align: center;
-			}
-			.row {
-				max-width: 880px;
-				margin: 80px auto 40px;
-				display: flex;
-				flex-direction: row;
-				justify-content: space-around;
-			}
-			.card {
-				padding: 18px 18px 24px;
-				width: 220px;
-				text-align: left;
-				text-decoration: none;
-				color: #434343;
-				border: 1px solid #9b9b9b;
-			}
-			.card:hover {
-				border-color: #067df7;
-			}
-			.card h3 {
-				margin: 0;
-				color: #067df7;
-				font-size: 18px;
-			}
-			.card p {
-				margin: 0;
-				padding: 12px 0 0;
-				font-size: 13px;
-				color: #333;
-			}
-		`}</style>
-	</div>
-);
+      <div className="time">
+        <p >The time here is</p>
+        <h1>{time}</h1>
+      </div>
 
-export default Home;
+      <style jsx>{` 
+
+
+         * { 
+          font-family: -apple-system;
+          }
+
+          h1 {
+            color: blue;
+            font-wight: 800;
+            text-align: center; 
+            margin: 0;
+          }
+
+          .title {
+           margin-top: 120px;
+          }
+
+          p {
+             line-height: 1.2;
+             margin: 0;
+          }
+
+          .about {
+            margin: 80px 0;
+             padding: 2%;
+          }
+
+          ul {
+            list-style: none;
+            font-weight: 600;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 2%;
+          }
+
+          li {
+            color: blue;
+            border: 1px solid blue;
+            padding: 6px;
+            border-radius: 5px;
+            margin: 3px 7px 0 0;
+          }
+
+          li:hover {
+            color: white;
+            background-color: blue;
+          }
+
+          .time {
+            margin-top: 80px;
+            margin-bottom: 30px;
+          }
+
+          .time p {
+            text-align: center;
+          }
+
+          .time h1 {
+            margin-top: 10px;
+          }
+
+
+        `}</style>
+    </div>
+
+  );
+}
