@@ -43,11 +43,6 @@ export default function Home() {
 
       <style jsx>{` 
 
-
-         * { 
-          font-family: -apple-system;
-          }
-
           h1 {
             color: blue;
             font-wight: 800;

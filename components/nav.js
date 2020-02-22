@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <div className="nav">
+    <div>
       <Link href="/">
         <a>Home</a>
       </Link>
@@ -11,11 +11,7 @@ export default function Nav() {
       </Link>
 
       <style jsx>{`
-        * {
-          font-family: -apple-system;
-        }
-
-        .nav {
+        div {
           margin: 20px 3% 0 3%;
         }
 
