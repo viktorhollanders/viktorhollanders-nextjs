@@ -9,6 +9,12 @@ export default ({ Component, pageProps }) => (
       body {
         margin: 0;
       }
+
+      header {
+        height: 80vh;
+        background-color: #ffd100;
+        padding-top: 10px;
+      }
     `}</style>
   </>
 );

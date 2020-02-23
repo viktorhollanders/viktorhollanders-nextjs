@@ -6,13 +6,19 @@ export default function Nav() {
       <Link href="/">
         <a>Home</a>
       </Link>
+      <Link href="/projects">
+        <a>Projects</a>
+      </Link>
       <Link href="/photos">
-        <a>photos</a>
+        <a>Photos</a>
       </Link>
 
       <style jsx>{`
         div {
           margin: 20px 3% 0 3%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
         }
 
         a {
@@ -24,7 +30,7 @@ export default function Nav() {
         }
 
         a:hover {
-          color: #5800bd;
+          font-weight: 700;
         }
       `}</style>
     </div>

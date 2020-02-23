@@ -21,7 +21,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module"
   },
-  plugins: ["react", "react-hooks"],
+  plugins: ["react", "react-hooks", "jsx-a11y"],
   rules: {
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-filename-extension": "off"
