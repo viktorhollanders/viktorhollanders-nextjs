@@ -1,38 +1,54 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 export default function Nav() {
   return (
-    <div>
+    <div className="nav">
       <Link href="/">
-        <a>Home</a>
-      </Link>
-      <Link href="/projects">
-        <a>Projects</a>
-      </Link>
-      <Link href="/photos">
-        <a>Photos</a>
+        <img src="/icons/logo.svg" />
       </Link>
 
+      <div className="header-link">
+        <div>
+          <Link href="/photos">
+            <a>Photos</a>
+          </Link>
+        </div>
+        <div>
+          <a href="mailto:viktorhollanders@gmail.com">Contact</a>
+        </div>
+      </div>
+
       <style jsx>{`
-        div {
-          margin: 20px 3% 0 3%;
+        .nav {
           display: flex;
           flex-direction: row;
-          justify-content: center;
+          justify-content: space-between;
+          align-items: center;
+
+          padding: 23px 23px 0 23px;
+        }
+
+        .header-link {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .header-link div {
+          margin-left: 42px;
         }
 
         a {
-          color: black;
-          margin-right: 15px;
-          text-decoration: none;
+          color: #000;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
 
-          hover: pointer;
+          text-decoration: underline;
         }
 
         a:hover {
-          font-weight: 700;
         }
       `}</style>
     </div>
-  );
+  )
 }

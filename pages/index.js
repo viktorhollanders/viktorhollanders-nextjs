@@ -1,88 +1,88 @@
-import Nav from "../components/Nav";
-import Head from "next/head"
+import Nav from '../components/Nav'
+import Footer from '../components/Fotter'
+import Head from 'next/head'
 
 export default function Home() {
-  const myTitle = "Viktor Hollanders";
-
-  const houers = new Date().getHours();
-  const minutes = new Date().getUTCMinutes();
-  const time = `${houers}:${minutes}`;
-
   return (
     <div>
       <Head>
+        <title>Viktor Hollanders</title>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
         <meta
           key="description"
           name="description"
           content="This is the personal website for Viktor hollanders showcasing his projects and photos."
         />
       </Head>
+
       <header>
-        <title>{myTitle}</title>
         <Nav />
-        <h1 className="title">{myTitle}</h1>
       </header>
 
-
-
-      <div>
-        <p className="about">
-          My name is Viktor Hollanders and I am a develoer based in Reykjavik Iceland.
-          Below are I have listed the porgramming languages and thecnologys I work with.
+      <p className="text capped">
+        Hey my name is Viktor Hollanders I design and develop stuff for the web
       </p>
 
+      <section className="cards">
+        <h1>Selected work</h1>
 
-        <div className="time">
-          <p >The time here is</p>
-          <h1>{time}</h1>
+        <div className="card">
+          <div className="card-link">
+            <h2>Söguheimar</h2>
+            <a href="https://soguheimar.is">
+              <img src="/icons/link.svg" />
+            </a>
+          </div>
+          <p>Home page / Jekyll</p>
         </div>
-      </div>
+      </section>
+
+      <Footer />
 
       <style jsx>{`
+        .text {
+          font-size: 42px;
+          line-height: 52px;
+          text-align: left;
+          margin: 120px 0;
+        }
 
-        header {
-          height: 80vh;
-          background-color: #FFD100;
-          padding-top: 10px;
-        } 
+        .cards {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
 
-          h1 {
-            font-wight: 800;
-            text-align: center; 
-            margin: 0;
-          }
+        h1 {
+          font-weight: bold;
+          font-size: 42px;
+          text-align: center;
+        }
 
-          .title {
-           margin-top: 120px;
-          }
+        .card {
+          width: 296px;
+          height: 163px;
+          background: #ffffff;
+          box-shadow: 0px -4px 40px rgba(0, 0, 0, 0.05);
+          border-radius: 5px;
+          margin: 42px 0;
+        }
 
-          p {
-             line-height: 1.2;
-             margin: 0;
-          }
+        .card-link {
+          display: flex;
+          flex-direction: row;
+          align-items: baseline;
+          justify-content: center;
+        }
 
-          .about {
-            margin: 80px 0;
-             padding: 2%;
-          }
-
-          .time {
-            margin-top: 80px;
-            margin-bottom: 30px;
-             
-          }
-
-          .time p {
-            text-align: center;
-          }
-
-          .time h1 {
-            margin-top: 10px;
-          }
-
-
-        `}</style>
+        h2 {
+          font-weight: 600;
+          font-size: 32px;
+          line-height: 38px;
+          margin-right: 18px;
+        }
+      `}</style>
     </div>
-
-  );
+  )
 }
