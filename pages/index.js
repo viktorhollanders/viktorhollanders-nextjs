@@ -29,7 +29,7 @@ export default function Home() {
         <div className="card">
           <div className="card-link">
             <h2>Söguheimar</h2>
-            <a href="https://soguheimar.is">
+            <a href="https://soguheimar.is" target="_blank">
               <img src="/icons/link.svg" />
             </a>
           </div>
@@ -39,7 +39,7 @@ export default function Home() {
         <div className="card">
           <div className="card-link">
             <h2>BioBorgari</h2>
-            <a href="https://bioborgari.com">
+            <a href="https://bioborgari.com" target="_blank">
               <img src="/icons/link.svg" />
             </a>
           </div>
