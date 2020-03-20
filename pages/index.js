@@ -12,7 +12,7 @@ export default function Home() {
         <meta
           key="description"
           name="description"
-          content="This is the personal website for Viktor hollanders showcasing his projects and photos."
+          content="Hey, my name is Viktor Hollanders and this site showcases some of my projects and photos."
         />
       </Head>
 
