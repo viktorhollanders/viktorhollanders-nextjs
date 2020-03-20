@@ -8,11 +8,11 @@ export default function Nav() {
       </Link>
 
       <div className="header-link">
-        <div>
+        {/* <div>
           <Link href="/photos">
             <a>Photos</a>
           </Link>
-        </div>
+        </div> */}
         <div>
           <a href="mailto:viktorhollanders@gmail.com">Contact</a>
         </div>

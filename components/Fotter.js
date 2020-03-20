@@ -39,6 +39,17 @@ export default function Fotter() {
      p {
       margin-top: 42px;
      }     
+
+     @media screen and (min-width: 700px) {
+      img {
+       height: 50px;
+       width: 50px;
+      }
+
+      p {
+       margin-bottom: 60px;
+      }
+     }
     `}</style>
     </div>
   )

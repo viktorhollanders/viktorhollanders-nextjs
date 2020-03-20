@@ -24,9 +24,8 @@ export default function Home() {
         Hey my name is Viktor Hollanders I design and develop stuff for the web
       </p>
 
-      <section className="cards">
-        <h1>Selected work</h1>
-
+      <h1>My selected work</h1>
+      <section className="cards capped">
         <div className="card">
           <div className="card-link">
             <h2>Söguheimar</h2>
@@ -35,6 +34,16 @@ export default function Home() {
             </a>
           </div>
           <p>Home page / Jekyll</p>
+        </div>
+
+        <div className="card">
+          <div className="card-link">
+            <h2>BioBorgari</h2>
+            <a href="https://bioborgari.com">
+              <img src="/icons/link.svg" />
+            </a>
+          </div>
+          <p>Home page e-commerce / nextJs </p>
         </div>
       </section>
 
@@ -81,6 +90,42 @@ export default function Home() {
           font-size: 32px;
           line-height: 38px;
           margin-right: 18px;
+        }
+
+        @media screen and (min-width: 500px) {
+          .text {
+            padding: 0 20%;
+          }
+
+          .text {
+            margin: 200px 0;
+          }
+        }
+
+        @media screen and (min-width: 600px) {
+          .capped {
+            padding: 0 12%;
+          }
+
+          h1 {
+            margin-bottom: 64px;
+          }
+
+          .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 42px;
+          }
+
+          .card {
+            margin-bottom: 10px;
+          }
+        }
+
+        @media screen and (min-width: 1000px) {
+          .text {
+            padding: 0 28%;
+          }
         }
       `}</style>
     </div>
