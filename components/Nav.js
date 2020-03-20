@@ -44,6 +44,7 @@ export default function Nav() {
           line-height: 19px;
 
           text-decoration: underline;
+          text-decoration-color: #ffd600;
         }
 
         a:hover {
