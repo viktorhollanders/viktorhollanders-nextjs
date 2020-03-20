@@ -48,6 +48,12 @@ export default function Nav() {
 
         a:hover {
         }
+
+        @media screen and (min-width: 600px) {
+          .nav {
+            padding: 30px 40px 0 40px;
+          }
+        }
       `}</style>
     </div>
   )
