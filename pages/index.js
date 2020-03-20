@@ -14,6 +14,22 @@ export default function Home() {
           name="description"
           content="Hey, my name is Viktor Hollanders and this site showcases some of my projects and photos."
         />
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-86502310-1"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-86502310-1');
+              `,
+          }}
+        />
       </Head>
 
       <header>
