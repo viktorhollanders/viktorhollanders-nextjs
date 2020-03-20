@@ -43,7 +43,7 @@ export default function Home() {
               <img src="/icons/link.svg" />
             </a>
           </div>
-          <p>Home page e-commerce / nextJs </p>
+          <p>E-commerce / nextJs </p>
         </div>
       </section>
 

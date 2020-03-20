@@ -3,13 +3,13 @@ export default function Fotter() {
     <div>
       <footer>
         <div className="social-icons">
-          <a src="https://github.com/viktorhollanders">
+          <a href="https://github.com/viktorhollanders" target="_blank">
             <img src="/icons/github.png" />
           </a>
-          <a src="https://github.com/viktorhollanders">
+          <a href="https://github.com/viktorhollanders" target="_blank">
             <img src="/icons/instagram.png" />
           </a>
-          <a src="https://twitter.com/VHollanders">
+          <a href="https://twitter.com/VHollanders" target="_blank">
             <img src="/icons/twitter.png" />
           </a>
         </div>
