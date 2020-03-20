@@ -6,7 +6,10 @@ export default function Fotter() {
           <a href="https://github.com/viktorhollanders" target="_blank">
             <img src="/icons/github.png" />
           </a>
-          <a href="https://github.com/viktorhollanders" target="_blank">
+          <a
+            href="https://www.instagram.com/viktorjorthollanders/"
+            target="_blank"
+          >
             <img src="/icons/instagram.png" />
           </a>
           <a href="https://twitter.com/VHollanders" target="_blank">
