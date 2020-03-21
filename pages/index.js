@@ -37,11 +37,12 @@ export default function Home() {
       </header>
 
       <p className="text capped">
-        Hey my name is Viktor Hollanders I design and develop stuff for the web
+        Hey my name is Viktor Hollanders. <br /> I design and develop stuff for
+        the web
       </p>
 
       <h1>My selected work</h1>
-      <section className="cards capped">
+      <section className="cards">
         <div className="card">
           <div className="card-link">
             <h2>Söguheimar</h2>
@@ -74,9 +75,8 @@ export default function Home() {
         }
 
         .cards {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+          display: grid;
+          grid-template-columns: 1fr;
         }
 
         h1 {
@@ -88,10 +88,12 @@ export default function Home() {
         .card {
           width: 296px;
           height: 163px;
+          margin: 42px 0;
+          justify-self: center;
+
           background: #ffffff;
           box-shadow: 0px -4px 40px rgba(0, 0, 0, 0.05);
           border-radius: 5px;
-          margin: 42px 0;
         }
 
         .card-link {
@@ -110,10 +112,6 @@ export default function Home() {
 
         @media screen and (min-width: 500px) {
           .text {
-            padding: 0 20%;
-          }
-
-          .text {
             margin: 200px 0;
           }
         }
@@ -126,10 +124,19 @@ export default function Home() {
           h1 {
             margin-bottom: 64px;
           }
+        }
+
+        @media screen and (min-width: 700px) {
+          .text {
+            font-size: 64px;
+            line-height: 72px;
+            font-weight: 400;
+
+            padding: 0 20% 0 10%;
+          }
 
           .cards {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             grid-gap: 42px;
           }
 
@@ -138,9 +145,15 @@ export default function Home() {
           }
         }
 
+        @media screen and (min-width: 800px) {
+          .cards {
+            grid-template-columns: 1fr 1fr 1fr;
+          }
+        }
+
         @media screen and (min-width: 1000px) {
           .text {
-            padding: 0 28%;
+            padding: 0 38% 0 10%;
           }
         }
       `}</style>
