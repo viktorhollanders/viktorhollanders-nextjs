@@ -43,8 +43,9 @@ export default function Nav() {
           font-size: 16px;
           line-height: 19px;
 
-          text-decoration: underline;
-          text-decoration-color: #ffd600;
+          border-bottom: 3px solid #ffd600;
+          text-decoration: none;
+          padding-bottom: 3px;
         }
 
         a:hover {

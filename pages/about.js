@@ -63,6 +63,11 @@ export default function About() {
           .about {
             margin: 200px 0;
           }
+
+          .about img {
+            height: 150px;
+            width: 150px;
+          }
         }
       `}</style>
     </div>
