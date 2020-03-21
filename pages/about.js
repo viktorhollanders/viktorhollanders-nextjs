@@ -57,7 +57,9 @@ export default function About() {
           .capped {
             padding: 0 12%;
           }
+        }
 
+        @media screen and (min-width: 800px) {
           .about {
             margin: 200px 0;
           }
