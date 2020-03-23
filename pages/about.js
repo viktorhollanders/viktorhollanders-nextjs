@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Nav from '../components/Nav'
 import Footer from '../components/Fotter'
 
@@ -8,7 +9,7 @@ export default function About() {
         <Nav />
       </header>
 
-      <section className="about capped">
+      <section className="about">
         <img src="/images/profile-picture.jpeg" />
         <p>
           So as you know already my name is Viktor Hollanders. I'm 27 years old
@@ -21,21 +22,39 @@ export default function About() {
         </p>
       </section>
 
-      {/* <section className="albums">
-        <div className="album">
-          <picture>
-            <img src="" />
-          </picture>
-          <h1></h1>
-          <p></p>
-        </div>
-      </section> */}
+      <section className="albums">
+        <Link href="#">
+          <div className="album">
+            <picture>
+              <img src="/images/photos/002/21765432_1380782382032120_2606643344064736801_o.jpg" />
+            </picture>
+            <div className="album-title">
+              <h1>ADHD Sygló</h1>
+              <p>17.09.17</p>
+            </div>
+          </div>
+        </Link>
+
+        <Link href="#">
+          <div className="album">
+            <picture>
+              <img src="/images/photos/001/14556711_1021665471277148_7565869595573414524_o.jpg" />
+            </picture>
+            <div className="album-title">
+              <h1>Morning Mist</h1>
+              <p>17.09.17</p>
+            </div>
+          </div>
+        </Link>
+      </section>
 
       <Footer />
 
       <style jsx>{`
         .about {
-          margin: 120px 0;
+          max-width: 977px;
+          margin: 0 auto;
+          padding: 0 16px 120px 16px;
         }
 
         .about img {
@@ -48,25 +67,74 @@ export default function About() {
         }
 
         .about p {
-          font-size: 32px;
-          line-height: 42px;
+          font-size: 24px;
+          line-height: 32px;
           text-align: left;
         }
 
+        .album {
+          padding: 0 16px 64px 16px;
+          position: relative;
+          max-width: 977px;
+          margin: 0 auto;
+        }
+
+        .album-title {
+          width: 100%;
+        }
+
+        .album-title h1 {
+          font-size: 32px;
+        }
+
+        .album-title p {
+          font-size: 16px;
+        }
+
+        .album-title {
+          color: #fff;
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        picture img {
+          width: 100%;
+          height: auto;
+        }
+
         @media screen and (min-width: 600px) {
-          .capped {
-            padding: 0 12%;
+          .about {
+            padding: 0 60px 120px 60px;
+          }
+
+          .album {
+            padding: 0 60px 64px 60px;
           }
         }
 
         @media screen and (min-width: 800px) {
-          .about {
-            margin: 200px 0;
-          }
-
           .about img {
             height: 150px;
             width: 150px;
+          }
+
+          .about p {
+            font-size: 32px;
+            line-height: 42px;
+          }
+
+          .album {
+            padding-bottom: 126px;
+          }
+
+          .album-title h1 {
+            font-size: 42px;
+          }
+
+          .album-title p {
+            font-size: 24px;
           }
         }
       `}</style>
