@@ -10,6 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.png" />
         <meta
+          key="description"
           name="description"
           content="Hey, my name is Viktor Hollanders, I'm a web developer and designer."
         />
