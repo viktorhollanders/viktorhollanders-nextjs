@@ -9,6 +9,7 @@ export default function Home() {
         <title>Viktor Hollanders</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           key="description"
           name="description"
@@ -18,6 +19,10 @@ export default function Home() {
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-86502310-1"
+        />
+        <meta
+          name="google-site-verification"
+          content="sbSIZB_IPao-ANb4vbHmTCrZfEDsXlFDdSsTrlN92aU"
         />
         <script
           dangerouslySetInnerHTML={{
