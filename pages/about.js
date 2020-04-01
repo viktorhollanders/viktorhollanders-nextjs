@@ -11,13 +11,23 @@ export default function About() {
       <section className="about capped">
         <img src="/images/profile-picture.jpeg" />
         <p>
-          So as you know already my name is Viktor Hollanders. I'm 27 years old
-          self-taught web developer and designer, living in Reikjavík Iceland.
+          So as you know already my name is Viktor Hollanders. I’m a 27-year-old
+          web designer and developer based in Reykjavík Iceland. My focus is on
+          making the user experience as simple and intuitive as possible as well
+          as responsive design and minimalistic but strong user interface. This
+          all boils down to that I will make a product that fits your and your
+          company’s needs. I can also do them separately, programming or design
+          that's no problem. Below is a list of technologies that I know.
         </p>
         <p>
-          Besides web development and web design work, I like to carve spoons
-          plant trees and take photos. You can see some of the photos I have
-          shot as I walk around here below. Peace out ✌️
+          <strong>Languages: </strong> HTML, Css, Javascript, command line.{' '}
+          <br />
+          <strong>Frameworks: </strong> GIT, Next, Craft cms.
+        </p>
+        <p>
+          Besides web development and web design, I like to carve spoons plant
+          trees and take photos. You can see some of the photos I have shot as I
+          walk around here below. Peace out ✌️
         </p>
       </section>
 
@@ -48,8 +58,8 @@ export default function About() {
         }
 
         .about p {
-          font-size: 32px;
-          line-height: 42px;
+          font-size: 24px;
+          line-height: 32px;
           text-align: left;
         }
 
