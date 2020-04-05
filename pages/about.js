@@ -20,9 +20,9 @@ export default function About() {
           that's no problem. Below is a list of technologies that I know.
         </p>
         <p>
-          <strong>Languages: </strong> HTML, Css, Javascript, command line.{' '}
+          <strong>Languages: </strong> HTML, Css, Javascript, GIT, command line.
           <br />
-          <strong>Frameworks: </strong> GIT, Next, Craft cms.
+          <strong>Frameworks: </strong> , Next, Craft cms, Jekyll.
         </p>
         <p>
           Besides web development and web design, I like to carve spoons plant
