@@ -26,8 +26,7 @@ export default function About() {
         </p>
         <p>
           Besides web development and web design, I like to carve spoons plant
-          trees and take photos. You can see some of the photos I have shot as I
-          walk around here below. Peace out ✌️
+          trees and take photos. Peace out ✌️
         </p>
       </section>
 
