@@ -9,12 +9,14 @@ export default function Home() {
         <title>Viktor Hollanders</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.png" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           key="description"
           name="description"
           content="Hey, my name is Viktor Hollanders, I'm a web developer and designer."
         />
+        <meta property="og:image" content="/icons/logo.svg" />
 
         <script
           async
