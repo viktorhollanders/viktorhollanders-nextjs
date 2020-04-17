@@ -16,7 +16,10 @@ export default function Home() {
           name="description"
           content="Hey, my name is Viktor Hollanders, I'm a web developer and designer."
         />
-        <meta property="og:image" content="/icons/logo.svg" />
+        <meta
+          property="og:image"
+          content="https://viktorhollanders.com/icons/logo.svg"
+        />
 
         <script
           async
