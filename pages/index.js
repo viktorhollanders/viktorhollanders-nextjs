@@ -18,7 +18,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://viktorhollanders.com/icon/icon.png"
+          content="https://viktorhollanders.com/icons/icon.png"
         />
 
         <script
