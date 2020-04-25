@@ -23,7 +23,9 @@ export default function About() {
         <p>
           <strong>Languages: </strong> HTML, Css, Javascript, GIT, command line.
           <br />
-          <strong>Frameworks: </strong> , Next Js, Craft cms, Jekyll.
+          <strong>Frameworks: </strong> Next.js, React
+          <br />
+          <strong>Content delivery systems CMS: </strong> Craft cms, Jekyll.
         </p>
         <p>
           Besides web development and web design, I like to carve spoons,
