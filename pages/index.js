@@ -14,7 +14,7 @@ export default function Home() {
         <meta
           key="description"
           name="description"
-          content="Hey, my name is Viktor Hollanders, I'm a web developer and designer."
+          content="Hey, my name is Viktor Hollanders, I design and develop websites."
         />
         <meta
           property="og:image"

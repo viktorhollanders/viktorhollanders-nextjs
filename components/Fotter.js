@@ -23,8 +23,10 @@ export default function Fotter() {
         margin-top: 58px;
        }
 
-       .social-icons a:nth-child(2) {
-        margin: 0 40px;
+       .social-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
        }
 
        a:hover,
@@ -44,6 +46,10 @@ export default function Fotter() {
      }     
 
      @media screen and (min-width: 700px) {
+      footer {
+        margin-top: 116px;
+       }
+
       img {
        height: 50px;
        width: 50px;

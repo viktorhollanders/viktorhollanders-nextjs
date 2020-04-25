@@ -17,16 +17,17 @@ export default function About() {
           as responsive design and minimalistic but strong user interface. This
           all boils down to that I will make a product that fits your and your
           company’s needs. I can also do them separately, programming or design
-          that's no problem. Below is a list of technologies that I know.
+          that's no problem. Below is a list of technologies that I work with at
+          the moment.
         </p>
         <p>
           <strong>Languages: </strong> HTML, Css, Javascript, GIT, command line.
           <br />
-          <strong>Frameworks: </strong> , Next, Craft cms, Jekyll.
+          <strong>Frameworks: </strong> , Next Js, Craft cms, Jekyll.
         </p>
         <p>
-          Besides web development and web design, I like to carve spoons plant
-          trees and take photos. Peace out ✌️
+          Besides web development and web design, I like to carve spoons,
+          planting trees and take photos. Peace out ✌️
         </p>
       </section>
 
