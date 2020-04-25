@@ -25,7 +25,7 @@ export default function About() {
           <br />
           <strong>Frameworks: </strong> Next.js, React
           <br />
-          <strong>Content delivery systems CMS: </strong> Craft cms, Jekyll.
+          <strong>Content Management System (CMS): </strong> Craft cms, Jekyll.
         </p>
         <p>
           Besides web development and web design, I like to carve spoons,
