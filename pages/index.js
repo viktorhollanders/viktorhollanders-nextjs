@@ -46,71 +46,109 @@ export default function Home() {
         <Nav />
       </header>
 
-      <p className="text capped">
+      <p className="header-text capped">
         Hey my name is Viktor Hollanders. <br /> I design and develop stuff for
         the web
       </p>
 
       <h1>My selected work</h1>
-      <section className="cards">
+      <section className="cards capped">
         <div className="card">
-          <div className="card-link">
-            <h2>Söguheimar</h2>
-            <a href="https://soguheimar.is" target="_blank">
-              <img src="/icons/link.svg" />
+          <img src="/images/soguheimar.jpg" alt="card" />
+          <p className="card-info">Web-development / design</p>
+          <p className="card-description">
+            I founded Söguheimar which is a summer camp for kids along with my
+            brother and our friend in the summer of 2014. It has ben growing
+            since then, each time we pick a story and live in it for a week, so
+            lots of fun. I build the site using Jekyll.
+          </p>
+          <div className="card-links">
+            <a
+              className="website-link"
+              href="https://soguheimar.is"
+              target="_blank"
+            >
+              <img src="/icons/website-link.svg" alt="website icon" />
+            </a>
+            <a
+              className="github-link"
+              href="https://github.com/viktorhollanders/soguheimar"
+              target="_blank"
+            >
+              <img src="/icons/guthub-link.svg" alt="github icon" />
             </a>
           </div>
-          <p>Home page / Jekyll</p>
         </div>
 
         <div className="card">
-          <div className="card-link">
-            <h2>BioBorgari</h2>
-            <a href="https://bioborgari.com" target="_blank">
-              <img src="/icons/link.svg" />
+          <img src="/images/steiniart.jpg" alt="card" />
+          <p className="card-info">Web-development / design</p>
+          <p className="card-description">
+            Steini art is a blog and art showcase for Aðalstein Þórsson and his
+            project Einkasafnið. It´s built-in Craft CMS, which is a fantastic
+            CMS, and its truly 100% customizable.
+          </p>
+          <div className="card-links">
+            <a
+              className="website-link"
+              href="https://steini.art"
+              target="_blank"
+            >
+              <img src="/icons/website-link.svg" alt="website icon" />
+            </a>
+            <a
+              className="github-link"
+              href="https://github.com/viktorhollanders/steiniart-craft-CMS-source"
+              target="_blank"
+            >
+              <img src="/icons/guthub-link.svg" alt="github icon" />
             </a>
           </div>
-          <p>E-commerce / nextJs </p>
+        </div>
+
+        <div className="card">
+          <img src="/images/bioborgari.jpg" alt="card" />
+          <p className="card-info">Web-development</p>
+          <p className="card-description">
+            Bio Borgari is an organic burger place in the heart of Reykjavik.
+            They needed a new website and that would connect easily to their
+            food delivery platform. It is built in Next Js , and linking to
+            once. gloriafood. So if you ar hungry for a burger, I highly
+            recomend them.
+          </p>
+          <div className="card-links">
+            <a
+              className="website-link"
+              href="https://bioborgari.com"
+              target="_blank"
+            >
+              <img src="/icons/website-link.svg" alt="website icon" />
+            </a>
+            <a
+              className="github-link"
+              href="https://github.com/viktorhollanders/bioborgari"
+              target="_blank"
+            >
+              <img src="/icons/guthub-link.svg" alt="github icon" />
+            </a>
+          </div>
         </div>
       </section>
 
       <Footer />
 
       <style jsx>{`
-        .text {
+        .header-text {
           font-size: 42px;
           line-height: 52px;
           text-align: left;
           margin: 120px 0;
         }
 
-        .cards {
-          display: grid;
-          grid-template-columns: 1fr;
-        }
-
         h1 {
           font-weight: bold;
-          font-size: 42px;
+          font-size: 32px;
           text-align: center;
-        }
-
-        .card {
-          width: 296px;
-          height: 163px;
-          margin: 42px 0;
-          justify-self: center;
-
-          background: #ffffff;
-          box-shadow: 0px -4px 40px rgba(0, 0, 0, 0.05);
-          border-radius: 5px;
-        }
-
-        .card-link {
-          display: flex;
-          flex-direction: row;
-          align-items: baseline;
-          justify-content: center;
         }
 
         h2 {
@@ -120,15 +158,50 @@ export default function Home() {
           margin-right: 18px;
         }
 
+        .cards {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        .card {
+          justify-self: center;
+        }
+
+        .card img {
+          width: 100%;
+        }
+
+        .card-info {
+          color: #686868;
+        }
+
+        .card-links {
+          display: flex;
+          justify-content: start;
+        }
+
+        .card-links a:hover {
+          cursor: pointer;
+        }
+
+        .website-link img {
+          height: 22px;
+          padding-right: 26px;
+        }
+
+        .github-link img {
+          height: 26px;
+        }
+
         @media screen and (min-width: 500px) {
-          .text {
+          .header-text {
             margin: 200px 0;
           }
         }
 
         @media screen and (min-width: 600px) {
           .capped {
-            padding: 0 12%;
+            padding: 0 9%;
           }
 
           h1 {
@@ -137,7 +210,7 @@ export default function Home() {
         }
 
         @media screen and (min-width: 700px) {
-          .text {
+          .header-text {
             font-size: 64px;
             line-height: 72px;
             font-weight: 400;
@@ -147,7 +220,7 @@ export default function Home() {
 
           .cards {
             grid-template-columns: 1fr 1fr;
-            grid-gap: 42px;
+            grid-gap: 60px;
           }
 
           .card {
@@ -155,15 +228,15 @@ export default function Home() {
           }
         }
 
-        @media screen and (min-width: 800px) {
+        @media screen and (min-width: 900px) {
           .cards {
             grid-template-columns: 1fr 1fr 1fr;
           }
         }
 
         @media screen and (min-width: 1000px) {
-          .text {
-            padding: 0 38% 0 10%;
+          .header-text {
+            padding: 0 17% 0 17%;
           }
         }
       `}</style>

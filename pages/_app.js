@@ -8,9 +8,8 @@ export default ({ Component, pageProps }) => (
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
           Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-        text-align: center;
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 18px;
+        line-height: 1.7;
       }
 
       * {

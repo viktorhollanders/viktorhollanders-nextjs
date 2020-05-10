@@ -3,17 +3,14 @@ export default function Fotter() {
     <div>
       <footer>
         <div className="social-icons">
-          <a href="https://github.com/viktorhollanders" target="_blank">
-            <img src="/icons/github.png" />
+          <a href="https://twitter.com/VHollanders" target="_blank">
+            <img src="/icons/twitter.png" />
           </a>
           <a
             href="https://www.instagram.com/viktorjorthollanders/"
             target="_blank"
           >
             <img src="/icons/instagram.png" />
-          </a>
-          <a href="https://twitter.com/VHollanders" target="_blank">
-            <img src="/icons/twitter.png" />
           </a>
         </div>
         <p>©viktorhollanders</p>
@@ -26,14 +23,20 @@ export default function Fotter() {
        .social-icons {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
        }
 
+      
        a:hover,
        a:focus,
        a:active {
         courur: pointer;
        }
+
+        .social-icons a:nth-child(2) {
+         padding-left:40px;
+       }
+
 
        img {
         height: 40px;
@@ -43,12 +46,18 @@ export default function Fotter() {
 
      p {
       margin-top: 42px;
+      text-align: center;
      }     
 
      @media screen and (min-width: 700px) {
       footer {
         margin-top: 116px;
        }
+
+        .social-icons a:nth-child(2) {
+         padding-left: 80px;
+       }
+
 
       img {
        height: 50px;

@@ -43,7 +43,7 @@ export default function Nav() {
           font-size: 16px;
           line-height: 19px;
 
-          border-bottom: 3px solid #ffd600;
+          border-bottom: 3px solid #000;
           text-decoration: none;
           padding-bottom: 3px;
         }
