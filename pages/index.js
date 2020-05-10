@@ -165,6 +165,7 @@ export default function Home() {
 
         .card {
           justify-self: center;
+          margin-bottom: 60px;
         }
 
         .card img {
@@ -221,10 +222,6 @@ export default function Home() {
           .cards {
             grid-template-columns: 1fr 1fr;
             grid-gap: 60px;
-          }
-
-          .card {
-            margin-bottom: 10px;
           }
         }
 
