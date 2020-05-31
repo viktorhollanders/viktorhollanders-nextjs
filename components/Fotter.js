@@ -13,11 +13,10 @@ export default function Fotter() {
             <img src="/icons/instagram.png" />
           </a>
         </div>
-        <p>©viktorhollanders</p>
       </footer>
       <style jsx>{`
        footer {
-        margin-top: 58px;
+        margin: 58px 0;
        }
 
        .social-icons {
@@ -42,12 +41,7 @@ export default function Fotter() {
         height: 40px;
         width: 40px;
        }
-     }
-
-     p {
-      margin-top: 42px;
-      text-align: center;
-     }     
+     }    
 
      @media screen and (min-width: 700px) {
       footer {
@@ -62,10 +56,6 @@ export default function Fotter() {
       img {
        height: 50px;
        width: 50px;
-      }
-
-      p {
-       margin-bottom: 60px;
       }
      }
     `}</style>
