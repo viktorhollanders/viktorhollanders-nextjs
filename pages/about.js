@@ -15,7 +15,7 @@ export default function About() {
           <p>
             I’m a 27-year-old web designer and developer based in Reykjavík
             Iceland. Besides web development and web design, I like to carve
-            spoons, planting trees and take photos.
+            spoons, planting trees and takeing photos.
           </p>
           <p>
             I design and deliver websites with a powerful brand and a simple and
