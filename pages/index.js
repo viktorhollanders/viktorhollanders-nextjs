@@ -67,6 +67,7 @@ export default function Home() {
               className="website-link"
               href="https://soguheimar.is"
               target="_blank"
+              rel="noreferrer"
             >
               <img src="/icons/website-link.svg" alt="website icon" />
             </a>
@@ -74,6 +75,7 @@ export default function Home() {
               className="github-link"
               href="https://github.com/viktorhollanders/soguheimar"
               target="_blank"
+              rel="noreferrer"
             >
               <img src="/icons/guthub-link.svg" alt="github icon" />
             </a>
@@ -93,6 +95,7 @@ export default function Home() {
               className="website-link"
               href="https://steini.art"
               target="_blank"
+              rel="noreferrer"
             >
               <img src="/icons/website-link.svg" alt="website icon" />
             </a>
@@ -100,6 +103,7 @@ export default function Home() {
               className="github-link"
               href="https://github.com/viktorhollanders/steiniart-craft-CMS-source"
               target="_blank"
+              rel="noreferrer"
             >
               <img src="/icons/guthub-link.svg" alt="github icon" />
             </a>
@@ -121,6 +125,7 @@ export default function Home() {
               className="website-link"
               href="https://bioborgari.com"
               target="_blank"
+              rel="noreferrer"
             >
               <img src="/icons/website-link.svg" alt="website icon" />
             </a>
@@ -128,6 +133,7 @@ export default function Home() {
               className="github-link"
               href="https://github.com/viktorhollanders/bioborgari"
               target="_blank"
+              rel="noreferrer"
             >
               <img src="/icons/guthub-link.svg" alt="github icon" />
             </a>
