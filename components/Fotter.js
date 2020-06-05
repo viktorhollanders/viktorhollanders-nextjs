@@ -4,13 +4,13 @@ export default function Fotter() {
       <footer>
         <div className="social-icons">
           <a href="https://twitter.com/VHollanders" target="_blank">
-            <img src="/icons/twitter.png" />
+            <img src="/icons/twitter.png" alt="twitter icon" />
           </a>
           <a
             href="https://www.instagram.com/viktorjorthollanders/"
             target="_blank"
           >
-            <img src="/icons/instagram.png" />
+            <img src="/icons/instagram.png" alt="instagram icon" />
           </a>
         </div>
       </footer>

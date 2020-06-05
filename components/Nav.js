@@ -4,7 +4,7 @@ export default function Nav() {
   return (
     <div className="nav">
       <Link href="/">
-        <img src="/icons/logo.svg" />
+        <img src="/icons/logo.svg" alt="logo" />
       </Link>
 
       <div className="header-link">
