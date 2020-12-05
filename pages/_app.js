@@ -1,5 +1,5 @@
 export default ({ Component, pageProps }) => (
-  <>
+  <div>
     <Component {...pageProps} />
     <style jsx global>{`
       html,
@@ -20,5 +20,5 @@ export default ({ Component, pageProps }) => (
         padding: 0 16px;
       }
     `}</style>
-  </>
+  </div>
 )
