@@ -29,17 +29,6 @@ export default function Home() {
           name="google-site-verification"
           content="sbSIZB_IPao-ANb4vbHmTCrZfEDsXlFDdSsTrlN92aU"
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', 'UA-86502310-1');
-              `,
-          }}
-        />
       </Head>
 
       <header>
