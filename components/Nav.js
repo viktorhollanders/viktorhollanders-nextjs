@@ -14,7 +14,7 @@ export default function Nav() {
           </Link>
         </div>
         <div>
-          <a href="mailto:viktorhollanders@gmail.com">Contact</a>
+          <a href="mailto:viktorhollanders@hey.com">Contact</a>
         </div>
       </div>
 
