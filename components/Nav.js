@@ -9,11 +9,6 @@ export default function Nav() {
 
       <div className="header-link">
         <div>
-          <Link href="/about">
-            <a>About</a>
-          </Link>
-        </div>
-        <div>
           <a href="mailto:viktorhollanders@hey.com">Contact</a>
         </div>
       </div>

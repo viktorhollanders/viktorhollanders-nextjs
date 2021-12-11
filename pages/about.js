@@ -13,9 +13,9 @@ export default function About() {
         <div className="about-content">
           <h1>About</h1>
           <p>
-            I’m a 27-year-old web designer and developer based in Reykjavík
+            I’m a 29-year-old developer based in Reykjavík
             Iceland. Besides web development and web design, I like to carve
-            spoons, planting trees and takeing photos.
+            spoons, planting trees and taking photos.
           </p>
           <p>
             I design and deliver websites with a powerful brand and a simple and

@@ -76,7 +76,7 @@ export default function Home() {
           <p className="card-description">
             Steini art is a blog and art showcase for Aðalstein Þórsson and his
             project Einkasafnið. It´s built-in Craft CMS, which is a fantastic
-            CMS, and its truly 100% customizable.
+            CMS.
           </p>
           <div className="card-links">
             <a
@@ -103,10 +103,10 @@ export default function Home() {
           <p className="card-info">Web-development</p>
           <p className="card-description">
             Bio Borgari is an organic burger place in the heart of Reykjavik.
-            They needed a new website and that would connect easily to their
-            food delivery platform. It is built in Next Js , and linking to
-            once. gloriafood. So if you ar hungry for a burger, I highly
-            recomend them.
+            They have amazing burgers, and they have options for vegan and
+            gluten free people as well. The site is built in nextJs, and links
+            to their ordering platform. Iso if you want a good burger you now
+            know where to get it 🍔.
           </p>
           <div className="card-links">
             <a
